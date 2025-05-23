@@ -1,0 +1,128 @@
+/* Fonts & Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f5;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+/* Menu Section */
+#menu {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu Card Styling */
+.menu-item {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.menu-content h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.menu-content p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.price {
+  background-color: #fceae0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Video Section */
+#video-section {
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+#video-section h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.video-frame iframe {
+  width: 90%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .menu-content h3 {
+    font-size: 1rem;
+  }
+}
